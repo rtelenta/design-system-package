@@ -1,0 +1,14 @@
+/* purgecss start ignore */
+@tailwind base;
+/* purgecss end ignore */
+
+html {
+  font-size: 62.5%;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* purgecss start ignore */
+@tailwind components;
+/* purgecss end ignore */
+
+@tailwind utilities;
