@@ -1,3 +1,3 @@
-import MyComponent from './MyComponentQT'
+import MyComponent from './MyComponent'
 
 export default MyComponent
