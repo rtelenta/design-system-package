@@ -1,4 +1,5 @@
 import * as React from 'react'
+import './Mycomp.css'
 
 interface MyComponentProps {
   name: string

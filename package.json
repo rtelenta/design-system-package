@@ -1,8 +1,16 @@
 {
-  "name": "design-system-package",
+  "name": "design-system-demo-v2",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "design system demo",
+  "private": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./types/index.d.ts",
+  "files": [
+    "dist/",
+    "tailwind.config.js",
+    "types/"
+  ],
   "scripts": {
     "start": "start-storybook -p 9009",
     "build:mainjs": "node ./scripts/create-main-js.js",
@@ -11,12 +19,11 @@
     "build:declarations": "tsc --p tsconfig.json && yarn move:declarations && rimraf temp",
     "move:declarations": "node ./scripts/move-declarations.js",
     "clean": "rimraf dist && rimraf types && rimraf temp",
-    "test": "jest"
+    "test": "jest",
+    "release": "release-it"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
+  "license": "MIT",
+  "devDependencies": {
     "@babel/cli": "^7.13.14",
     "@babel/preset-react": "^7.13.13",
     "@babel/preset-typescript": "^7.13.0",
@@ -26,9 +33,7 @@
     "@types/react-dom": "^17.0.3",
     "babel-loader": "^8.2.2",
     "cross-env": "^7.0.3",
-    "rimraf": "^3.0.2"
-  },
-  "devDependencies": {
+    "rimraf": "^3.0.2",
     "@storybook/addon-controls": "^6.2.1",
     "@storybook/addon-docs": "^6.2.1",
     "@storybook/addon-knobs": "^6.2.1",
@@ -46,6 +51,7 @@
     "react": "^17.0.2",
     "react-docgen-typescript": "^1.21.0",
     "react-dom": "^17.0.2",
+    "release-it": "^14.5.1",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "ts-jest": "^26.5.4",
     "ts-loader": "^8.1.0",
