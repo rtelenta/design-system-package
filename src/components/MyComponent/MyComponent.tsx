@@ -12,7 +12,7 @@ const MyComponent: React.FC<MyComponentProps> = ({ name, number, text }) => {
   const { number: NumberState } = useMyComponent()
 
   return (
-    <div role="heading" aria-level={1} className="mt-20">My First Component Component: {name} {NumberState} {text} {number}</div>
+    <div role="heading" aria-level={1} className="mt-20">My First Codmponent Component: {name} {NumberState} {text} {number}</div>
   )
 }
 
