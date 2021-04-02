@@ -13,6 +13,7 @@ const MyComponent: React.FC<MyComponentProps> = ({ name, number, text }) => {
 
   return (
     <div role="heading" aria-level={1} className="mt-20">
+      {' '}
       My Firstasjh hjh sds saodmponent Component: {name} {NumberState} {text}{' '}
       {number}
     </div>
