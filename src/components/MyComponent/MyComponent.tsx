@@ -1,5 +1,6 @@
 import * as React from 'react'
 import './Mycomp.css'
+import useMyComponent from './useMyComponent'
 
 interface MyComponentProps {
   name: string
@@ -7,10 +8,14 @@ interface MyComponentProps {
   text: string
 }
 
-const MyComponent: React.FC<MyComponentProps> = ({ name, number, text }) => (
-  <div role="heading" aria-level={1} className="mt-20">
-    My First Component: {name} {number} {text}
-  </div>
-)
+const MyComponent: React.FC<MyComponentProps> = ({ name, number, text }) => {
+  const { number: NumberState } = useMyComponent()
+
+  return (
+    <div role="heading" aria-level={1} className="mt-20">
+      My First Component: {name} {NumberState} {text}
+    </div>
+  )
+}
 
 export default MyComponent
