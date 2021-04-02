@@ -20,7 +20,8 @@
     "move:declarations": "node ./scripts/move-declarations.js",
     "clean": "rimraf dist && rimraf types && rimraf temp",
     "test": "jest",
-    "release": "release-it --only-version"
+    "release": "release-it --only-version",
+    "prepare": "husky install"
   },
   "license": "MIT",
   "devDependencies": {
@@ -50,6 +51,7 @@
     "eslint-plugin-prettier": "^3.3.1",
     "fs-extra": "^9.1.0",
     "husky": "^6.0.0",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^26.6.3",
     "lint-staged": "^10.5.4",
     "postcss": "^7",
@@ -73,11 +75,15 @@
     "preset": "ts-jest",
     "testEnvironment": "jsdom",
     "testPathIgnorePatterns": [
-      "build/"
+      "build/",
+      "dist/"
     ],
     "setupFilesAfterEnv": [
       "<rootDir>/src/setupTests.ts"
-    ]
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+    }
   },
   "husky": {
     "hooks": {
