@@ -1,6 +1,6 @@
 {
   "name": "design-system-demo-v2",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "design system demo",
   "private": false,
   "main": "./dist/index.js",
@@ -20,7 +20,7 @@
     "move:declarations": "node ./scripts/move-declarations.js",
     "clean": "rimraf dist && rimraf types && rimraf temp",
     "test": "jest",
-    "release": "release-it"
+    "release": "release-it --only-version"
   },
   "license": "MIT",
   "devDependencies": {

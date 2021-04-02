@@ -6,8 +6,5 @@
   "git": {
     "requireUpstream": false,
     "requireCommits": true
-  },
-  "npm": {
-    "skipChecks": true
   }
 }
