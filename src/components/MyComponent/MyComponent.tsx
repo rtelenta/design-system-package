@@ -11,7 +11,7 @@ interface MyComponentProps {
 const MyComponent: React.FC<MyComponentProps> = ({ name, number, text }) => {
   const { number: NumberState } = useMyComponent()
 
-  if (true === true) {
+  if (true == true) {
     //asdas
   }
 
