@@ -13,11 +13,13 @@ module.exports = {
     },
   },
   extends: [
+    'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'eslint-config-prettier',
     'plugin:prettier/recommended',
   ],
   rules: {
+    'react/prop-types': 'off',
     'no-console': ['error', { allow: ['error'] }],
   },
 }
