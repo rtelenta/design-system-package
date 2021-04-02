@@ -21,7 +21,8 @@
     "clean": "rimraf dist && rimraf types && rimraf temp",
     "test": "jest",
     "release": "release-it --only-version",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "prettier --write ."
   },
   "license": "MIT",
   "devDependencies": {
