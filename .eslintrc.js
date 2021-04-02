@@ -13,9 +13,8 @@ module.exports = {
     },
   },
   extends: [
-    'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
+    'eslint-config-prettier',
     'plugin:prettier/recommended',
   ],
 }
