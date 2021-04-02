@@ -91,7 +91,11 @@
     }
   },
   "lint-staged": {
-    "*.{js,ts,tsx}": ["eslint --cache --fix"],
-    "*.{css,md}": ["prettier --write"]
+    "*.{js,ts,tsx}": [
+      "eslint --cache --fix"
+    ],
+    "*.{css,md}": [
+      "prettier --write"
+    ]
   }
 }

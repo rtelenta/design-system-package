@@ -7,5 +7,5 @@ test('Renders', async () => {
     <MyComponent name="John" number="12" text="asdsadsa" />
   )
 
-  expect(getByRole('heading')).toHaveTextContent('My First Component: John')
+  expect(getByRole('heading')).toBeInTheDocument()
 })
