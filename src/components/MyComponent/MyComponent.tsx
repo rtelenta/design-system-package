@@ -3,18 +3,16 @@ import './Mycomp.css'
 import useMyComponent from './useMyComponent'
 
 interface MyComponentProps {
-  name: string
-  number: string
-  text: string
+  name: string;
+  number: string;
+  text: string;
 }
 
 const MyComponent: React.FC<MyComponentProps> = ({ name, number, text }) => {
   const { number: NumberState } = useMyComponent()
 
   return (
-    <div role="heading" aria-level={1} className="mt-20">
-      My First Component: {name} {NumberState} {text} {number}
-    </div>
+    <div role="heading" aria-level={1} className="mt-20">My First Component: {name} {NumberState} {text} {number}</div>
   )
 }
 
