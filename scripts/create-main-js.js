@@ -11,7 +11,9 @@ const getDirectories = (source) =>
 const contentFile = () => {
   const directories = getDirectories(componentsDirectory)
   const importComponents = directories
-    .map((component) => `import ${component} from "./${component}";`)
+    .map(
+      (component) => `import ${component} from "./${component}/${component}";`
+    )
     .join('\n')
 
   const exportComponents = `export { ${directories.join(', ')} }`
