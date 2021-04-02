@@ -1,4 +1,7 @@
 {
+  "hooks": {
+    "before:git:release": "git pull && git fetch --tags"
+  },
   "git": {
     "requireUpstream": false,
     "requireCommits": true
