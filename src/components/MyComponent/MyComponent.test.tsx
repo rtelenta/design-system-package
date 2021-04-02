@@ -4,7 +4,7 @@ import MyComponent from './MyComponent'
 
 test('Renders', async () => {
   const { getByRole } = render(
-    <MyComponent name="John" number="12" text="hola" />
+    <MyComponent name="John" number="12" text="asdsadsa" />
   )
 
   expect(getByRole('heading')).toHaveTextContent('My First Component: John')
