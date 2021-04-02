@@ -20,7 +20,7 @@
     "move:declarations": "node ./scripts/move-declarations.js",
     "clean": "rimraf dist && rimraf types && rimraf temp",
     "test": "jest",
-    "release": "release-it"
+    "release": "git pull && git fetch --tags && release-it"
   },
   "license": "MIT",
   "devDependencies": {
