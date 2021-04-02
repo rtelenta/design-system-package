@@ -11,6 +11,8 @@ interface MyComponentProps {
 const MyComponent: React.FC<MyComponentProps> = ({ name, number, text }) => {
   const { number: NumberState } = useMyComponent()
 
+  console.log('asdas')
+
   return (
     <div role="heading" aria-level={1} className="mt-20">
       {' '}
