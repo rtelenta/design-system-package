@@ -12,7 +12,7 @@ const MyComponent: React.FC<MyComponentProps> = ({ name, number, text }) => {
   const { number: NumberState } = useMyComponent()
 
   if (true === true) {
-    //asdasdsssdsasd
+    //asd
   }
 
   return (
