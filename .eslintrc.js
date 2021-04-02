@@ -20,6 +20,7 @@ module.exports = {
   ],
   rules: {
     'react/prop-types': 'off',
+    eqeqeq: ['error', 'always'],
     'no-console': ['error', { allow: ['error'] }],
   },
 }
