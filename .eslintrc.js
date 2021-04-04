@@ -22,4 +22,15 @@ module.exports = {
     'react/prop-types': 'off',
     'no-console': ['error', { allow: ['error'] }],
   },
+  overrides: [
+    {
+      files: ['*.js', '*.jsx'],
+      rules: {
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
+        ' @typescript-eslint/no-var-requires': 'off',
+        '@typescript-eslint/no-var-requires': 'off',
+        'react/react-in-jsx-scope': 'off',
+      },
+    },
+  ],
 }

@@ -18,7 +18,13 @@
     "emitDeclarationOnly": true,
     "outDir": "./temp/"
   },
-  "include": ["./src/components/"],
+  "files": ["twin.d.ts"],
+  "include": [
+    "./src/components/",
+    "./src/components/**/*.json",
+    "typings",
+    "tailwind.config.js"
+  ],
   "exclude": [
     "./src/components/**/*.stories.tsx",
     "./src/components/**/*.stories.js",
