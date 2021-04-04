@@ -15,7 +15,7 @@
     "start": "start-storybook -p 9009",
     "build:mainjs": "node ./scripts/create-main-js.js",
     "build": "yarn clean && yarn build:mainjs && yarn build:js && yarn build:declarations",
-    "build:js": "cross-env BABEL_ENV=production babel --config-file ./babel.config.build.json src/components --out-dir dist --extensions \".ts,.tsx,.js\" --no-copy-ignored --copy-files",
+    "build:js": "cross-env BABEL_ENV=production babel --config-file ./babel.config.build.json src/components --out-dir dist/components --extensions \".ts,.tsx,.js\" --no-copy-ignored --copy-files",
     "build:declarations": "tsc --p tsconfig.json && yarn move:declarations && rimraf temp",
     "move:declarations": "node ./scripts/move-declarations.js",
     "clean": "rimraf dist && rimraf types && rimraf temp",
