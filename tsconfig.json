@@ -24,7 +24,7 @@
     "./src/components/**/*.json",
     "typings",
     "tailwind.config.js"
-  ],
+, "src/index.tsx", "src/index.tsx"  ],
   "exclude": [
     "./src/components/**/*.stories.tsx",
     "./src/components/**/*.stories.js",
