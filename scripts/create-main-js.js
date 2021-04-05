@@ -1,7 +1,7 @@
 const { readdirSync, appendFile, unlinkSync, existsSync } = require('fs')
 
 const componentsDirectory = './src/components'
-const mainJsFile = `src/index.tsx`
+const mainJsFile = `${componentsDirectory}/index.tsx`
 
 const getDirectories = (source) =>
   readdirSync(source, { withFileTypes: true })
@@ -12,8 +12,7 @@ const contentFile = () => {
   const directories = getDirectories(componentsDirectory)
   const importComponents = directories
     .map(
-      (component) =>
-        `import ${component} from "./components/${component}/${component}";`
+      (component) => `import ${component} from "./${component}/${component}";`
     )
     .join('\n')
 
