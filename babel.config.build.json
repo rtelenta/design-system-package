@@ -1,4 +1,4 @@
 {
   "presets": ["@babel/preset-react", "@babel/preset-typescript"],
-  "ignore": ["src//**/*.test.tsx", "src//**/*.stories.js"]
+  "ignore": ["src//**/*.test.tsx", "src//**/*.stories.js", "src/setupTest.ts", "src//*.css"]
 }
