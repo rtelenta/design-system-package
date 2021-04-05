@@ -1,6 +1,6 @@
 {
   "name": "design-system-demo-v2",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "design system demo",
   "private": false,
   "main": "./dist/index.js",
