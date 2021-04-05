@@ -11,6 +11,9 @@
     "tailwind.config.js",
     "types/"
   ],
+  "dependencies": {
+    "twin.macro": "^2.3.2"
+  },
   "scripts": {
     "start": "start-storybook -p 9009",
     "build:mainjs": "node ./scripts/create-main-js.js",
@@ -26,9 +29,6 @@
     "prepare": "husky install"
   },
   "license": "MIT",
-  "dependencies": {
-    "twin.macro": "^2.3.2"
-  },
   "devDependencies": {
     "@babel/cli": "^7.13.14",
     "@babel/preset-react": "^7.13.13",
@@ -76,7 +76,7 @@
   },
   "peerDependencies": {
     "react": ">16.0.0",
-    "react-dom": ">16.0.0",
+    "react-dom": ">16.0.0"
   },
   "jest": {
     "preset": "ts-jest",
