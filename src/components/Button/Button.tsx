@@ -45,9 +45,11 @@ const Button: React.FC<IButton> = ({
             <Icon name={iconName} size={size === 'sm' ? 16 : 24} />
           </StyledWrapperIcon>
         )}
+
         {loading && (
           <Loader className="button__icon" size={size === 'sm' ? 16 : 24} />
         )}
+
         <StyledTextButton iconOnly={iconOnly}>{children}</StyledTextButton>
       </StyledButton>
     </StyledWrapperButton>
